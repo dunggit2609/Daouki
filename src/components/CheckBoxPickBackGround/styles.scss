@@ -1,0 +1,16 @@
+
+
+.checkBoxPickBackGround {
+    &__icon {
+        border-radius: 3px;
+        box-shadow: inset 0 0 0 1px rgba(16,22,26,.2), inset 0 -1px 0 rgba(16,22,26,.1);
+        background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2207x1600/f543a340608d77dc9ad5f1c935d5cca4/photo-1608618140680-6f7190a9b24d.jpg");
+    }
+
+    &__checkedIcon {
+        border-radius: 3px;
+        box-shadow: inset 0 0 0 1px rgba(16,22,26,.2), inset 0 -1px 0 rgba(16,22,26,.1);
+        background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2207x1600/f543a340608d77dc9ad5f1c935d5cca4/photo-1608618140680-6f7190a9b24d.jpg");
+        transform: scale(1.5);
+    }
+}

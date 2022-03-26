@@ -1,0 +1,35 @@
+.footerContainer {
+  text-align: center;
+  padding-bottom: 5vh !important;
+  
+  width: 100%;
+  height: auto;
+
+  // position: absolute;
+  bottom: 0;
+
+  background: var(--backGroundColorStrength);
+  box-shadow: 0px 2px 4px -1px rgb(190, 190, 190),
+    0px 4px 5px 0px rgb(182, 182, 182), 0px 1px 10px 0px rgb(255, 255, 255);
+
+}
+.columnArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  // text-align: left;
+}
+
+.coppyRightArea {
+  margin-top: 3vh !important;
+  padding-top: 2vh;
+  // border-top: 0.5px solid rgb(228, 228, 228) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columnContainer {
+  padding-top: 3vh;
+  padding-left: 22vw;
+}

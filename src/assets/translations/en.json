@@ -1,0 +1,177 @@
+{
+  "header": {
+    "appName": "MYW"
+  },
+  "yupValidate": {
+    "emailRequired": "Please enter your Email Address.",
+    "emailWrongFormat": "Your Email is wrong format.",
+    "phoneRequired": "Please enter your Phone.",
+    "phoneWrongFormat": "Phone number is invalid.",
+    "usernameRequired": "Please enter your Username.",
+    "retypePassWordRequired": "Please retype your Password",
+    "retypePassWordNotMatch": "Retyped Password dose not match",
+    "passwordRequired": "Please enter your Password",
+    "passWordWrongFormat": "Password has minimum 8 characters, at leas tone uppercase letter,one lower letter,one number",
+    "required_field": "This field is required"
+  },
+  "auth": {
+    "authButton": {
+      "loginButton": "Login",
+      "registerButton": "Register",
+      "loginByFb": "Login with Facebook",
+      "noAccount": "Have no account?",
+      "haveAccount": "Already have an account?"
+    },
+    "dialog": {
+      "dialogLoginFb": "This feature is developing. You can use it next time 👌."
+    },
+    "authTitle": {
+      "login": "Login",
+      "register": "Register"
+    },
+    "authField": {
+      "password": "Password",
+      "retypepassword": "Retype Password",
+      "phone": "Phone",
+      "username": "Username",
+      "email": "Email",
+      "username_email": "Email or username"
+    }
+  },
+  "toolTip": {
+    "toogleMode": "Light/Dark",
+    "chooseLanguage": "Choose Language",
+    "userAction": "User Info",
+    "deleteWorkSpace": "Delete",
+    "editWorkSpace": "Edit"
+  },
+  "notiStack": {
+    "loginSuccess": "Login successfully!!! ✨",
+    "registerSuccess": "Register successfully!!! 🎉",
+    "logoutSuccess": "Log out successfully!!! 🎈",
+    "hasLogin": "You logged in, redirect to your work spaces 🎇",
+    "notLogin": "You have not logged in, Please login 🔑"
+  },
+  "footer": {
+    "contact": "Contact me",
+    "address": "Ward 14, District 8, Ho Chi Minh City",
+    "email": "davidnguyendung71@gmail.com",
+    "phone": "0704635376",
+    "socialMedia": "Social media",
+    "coppyRight": "© 2021 Nguyễn Trí Dũng, All Rights Reserved"
+  },
+  "work-space": {
+    "pageTitle": "💻  Your Work Spaces",
+    "filterArea": "Filter",
+    "noWorkSpace": "You do not have any work spaces. Please add new one 👇",
+    "noWorkSpaceJoined": "You do not join any work spaces !!!",
+    "addNewButton": "Add new",
+    "dialog": {
+      "inputFieldLabel": "Work space's name",
+      "workSpaceID": "Id of work space deleted",
+      "deleteWorkSpaceButton": "Delete",
+      "title": "Please enter your work space's infor !!!",
+      "titleConfirmDelete": "Are you sure to delete this work space 😦",
+      "addButton": "Add",
+      "closeButton": "Close"
+    },
+    "failedAddWorkSpace": "Fail to add new work space, please try again !!! 💪",
+    "successAddWorkSpace": "Congratuations !!!, Success to add New Work Space 🎆",
+    "failedDeleteWorkSpace": "Fail to delete this work space !!! ✋",
+    "successDeleteWorkSpace": "Success to delete New Work Space 🧨"
+  },
+  "listFilter": {
+    "all": "All work spaces",
+    "owned": "Your work spaces",
+    "joined": "Work spaces You joined"
+  },
+  "search": {
+    "placeholder": "Search"
+  },
+  "create_course": {
+    "course_name": "Course name",
+    "course_code": "Course code",
+    "label": "Create course"
+  },
+  "button": {
+    "next_step": "Next step",
+    "do_later": "I'll do it later",
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "assign": "Grade",
+    "add_new_course": "Add new course",
+    "view": "View",
+    "visualize": "Visualize",
+    "delete": "Delete",
+    "view_assignments": "View assignments", 
+    "add_new_test": "Add new test",
+    "confirm": "Confirm"
+  },
+  "create_test": {
+    "label": "Create test",
+    "test_name": "Test name",
+    "test_code": "Test code",
+    "result_type": "Result type",
+    "amount_of_question": "Question amounts",
+    "question_type": "Question type",
+    "multiple_choice": "Multiple choice",
+    "single_choice": "Single choice",
+    "paper_type": "Test paper's template",
+    "test_info": "Test info",
+    "test_config": "Test config",
+    "test_codes": "Test codes",
+    "test_more_config": "More config",
+    "change_result": "Change answer",
+    "upload_result": "Upload result file",
+    "input_result": "Enter result",
+    "had_result": "Had result",
+    "has_no_result": "Have no result",
+    "enter_result": "Please enter or upload result",
+    "duplicate_test_code": "Test code are duplicate",
+    "file_name": "File name",
+    "upload_answer": "Upload answer"
+  },
+  "create_submission": {
+    "label": "Create assignments",
+    "upload_assignment": "Upload assignment"
+  },
+  "resultType": {
+    "image": "Image",
+    "file": "File *.csv, *.xlsx",
+    "input": "Input from UI"
+  },
+  "tab_label": {
+    "test": "Test",
+    "assignment": "Assignment"
+  },
+  "course_desc": "Course help you manage tests and student's exams",
+  "course_add_new": "Please start your new course",
+  "from_date": "From date",
+  "to_date": "To date",
+  "status": {
+    "label": "Status",
+    "new": "New",
+    "graded": "Graded"
+  },
+  "created_at": "Created date",
+  "yes": "Yes",
+  "no": "No",
+  "paper_type": {
+    "model_1": "Template 1",
+    "model_2": "Template 2"
+  },
+  "student_id": "Student ID",
+  "grade": "Grade",
+  "image": "Image",
+  "test_detail": {
+    "label": "Test detail",
+    "info": "Info",
+    "config": "Config"
+  },
+  "more_feature": "More features",
+  "list_of_course": "List courses",
+  "visualize": {
+    "grade_type": "Statistic grade type",
+    "grade_range": "Statistic grade range"
+  }
+}

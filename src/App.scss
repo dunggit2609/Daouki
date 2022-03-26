@@ -1,0 +1,295 @@
+@import "./assets/responsive";
+$iconColor: black;
+$mainBoxColor: white;
+$avatarColor: #1976D2;
+$buttonAreaColor: transparent;
+$iconSignColor: white;
+.App {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  &::-webkit-scrollbar {
+    background: none;
+    width: 4px; 
+    display: block;
+}
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d8d8d7;
+  }
+}
+.MuiTypography-root {
+  font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+html,
+body {
+  padding: 0;
+  color: var(--color);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: var(--backGroundColor);
+  font-family: "Charlie Text", sans-serif !important;
+}
+.MuiTypography-root {
+  font-family: "Charlie Display", sans-serif !important;
+  font-weight: 500 !important;
+}
+.container_lazy {
+  position: relative;
+  margin: auto;
+  margin-top: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn {
+  margin: 5px !important;
+  font-weight: bold;
+  text-decoration: none;
+  &--red {
+    background-color: red !important;
+    color: white !important;
+  }
+
+  &--fullSize {
+    @include tablet {
+      width: 50%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &--noMarginLeft {
+    margin-left: 0 !important;
+  }
+  &--hoverBottomSpot {
+    &:hover::before {
+      left: 45%;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: none;
+      text-decoration: none !important;
+      bottom: -6px;
+      background-color: var(--color);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 0;
+      background-color: black;
+      transition: 0.25s;
+      background-color: var(--color);
+    }
+  }
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  min-height: 100vh;
+
+
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  &__logo {
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: bold !important;
+    font-size: 40px !important;
+    color: $iconColor;
+  }
+}
+
+.mainBox {
+  margin-top: 15vh !important;
+  margin-bottom: 4vh !important;
+  background-color: $mainBoxColor;
+  box-shadow: 5px 5px 5px 5px rgb(226, 225, 225);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+
+  &--loginBox {
+    margin-bottom: 15vh !important;
+  }
+
+  &--homePage {
+    color: black !important;
+    background-color: inherit;
+  }
+
+  &__title--auth {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+    color: black !important;
+  }
+  form {
+    margin: 25px;
+  }
+  &__avatar {
+    margin: auto;
+    background-color: $avatarColor !important;
+    text-align: center;
+  }
+  &__submitIcon {
+    margin-top: 25px;
+  }
+  &__buttonArea {
+    margin-top: 25px;
+    width: 100%;
+
+    margin-bottom: 25px;
+  }
+  &__iconSign {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 15px !important;
+  }
+  &__icon {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+}
+.mainBox__buttonArea .MuiButton-contained {
+  background-color: transparent !important;
+}
+
+.authSubmitting {
+  width: 100%;
+  height: 20px;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  box-sizing: border-box;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+h4 {
+  @include desktop {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+  @include tablet {
+    font-size: 25px !important;
+    font-weight: bold !important;
+  }
+
+  @include mobile {
+    font-size: 15px !important;
+    &.MuiTypography-root {
+      font-weight: bold !important;
+    }
+  }
+}
+
+.displayCenterByFlex {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.displayColumnFlex {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.displaySpaceAroundColumnFlex {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+}
+
+.displayRowFlex {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+
+}
+
+.flex-grow-3 {
+  flex-grow: 3;
+}
+
+.err-msg {
+  color: #f44336;
+
+  margin: 3px 14px 0 14px;
+  text-align: left;
+  
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+a.decoration-none {
+  text-decoration: none;
+  color: $avatarColor;
+
+  &-hover-effect:hover {
+    text-decoration: underline $avatarColor;
+  }
+}
+
+.scroll-custom {
+  &::-webkit-scrollbar {
+      background: none;
+      width: 4px; 
+      display: block;
+      height: 4px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+      background-color: #d8d8d7;
+
+  }
+}

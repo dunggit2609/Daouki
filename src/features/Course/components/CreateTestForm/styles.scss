@@ -1,0 +1,119 @@
+.test-config {
+    display: flex;
+    
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    &__item-test-code {
+        flex-grow: 1;
+        margin-right: 16px;
+    }
+
+    &__item-test-result-type {
+        flex-grow: 3;
+    }
+
+    &__item-test-change-result {
+
+        flex-grow: 1;
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+        // max-height: 40px;
+
+        // margin-top: 10px;
+    }
+
+    &__input-result-status {
+        margin-top: 12px;
+    }
+
+    &__test-codes {
+        margin-top: 24px;
+    }
+
+    &-extend {
+        margin-bottom: 24px;
+    }
+}
+
+.test-name {
+    margin-bottom: 24px;
+}
+
+.select {
+    width: 100%;
+}
+
+.config-amount-question {
+    margin-top: 24px;
+
+    max-width: 420px;
+}
+
+.general-config {
+    display: flex;
+}
+
+
+
+.change-result-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.width-150 {
+    width: 150px;
+}
+
+.width-202 {
+    width: 202px;
+}
+
+.confirm-remove {
+    margin: 0 0 0 8px;
+    padding: 8px 8px;
+
+    color: red;
+
+    cursor: pointer;
+
+    
+}
+
+.cancel-remove {
+    padding: 8px 8px;
+
+    cursor: pointer;
+
+}
+
+.result-type {
+    display: flex;
+    
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.config-paper-type {
+    display: flex;
+}
+
+.mt-9 {
+    margin-top: 9px;
+}
+
+.paper-type-container {
+    width: 396px;
+}
+
+.create-test-paper-container {
+padding: 24px;
+}
+
+.create-test-title {
+    display: flex;
+}

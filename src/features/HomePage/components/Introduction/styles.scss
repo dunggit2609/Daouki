@@ -1,0 +1,27 @@
+@import "assets/_responsive";
+
+.introductionSection {
+    padding-top: 100px;
+    position: relative;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    text-align: center;
+}
+
+.textArea {
+    @include desktop {
+      margin-top: 10vh !important;
+    }
+    @include tablet {
+      margin-top: 5vh !important;
+      font-size: small !important;
+    }
+  }
+  .imgArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include mdW {
+      display: none;
+    }
+  }

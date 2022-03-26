@@ -1,0 +1,48 @@
+.course-info {
+    &-container {
+        padding-top: 24px;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input-code {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--color);
+    
+        border: none;
+        background: none;
+        outline: none;
+
+        pointer-events: none;
+    
+    }
+
+    &__input-name {
+        font-size: 22px;
+        font-weight: 500;
+        color: #acb5ac;
+    
+        border: none;
+        background: none;
+        outline: none;
+
+        pointer-events: none;
+
+    
+    }
+
+    &__name {
+        margin-top: 16px;
+    }
+
+    &__item--more-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+}
+
+

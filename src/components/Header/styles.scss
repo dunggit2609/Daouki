@@ -1,0 +1,98 @@
+$colorLink: black;
+$scrollHeaderColor: rgb(252, 227, 227);
+@import "../../assets/_responsive";
+
+.appBar {
+  box-shadow: none !important;
+  padding-bottom: 1rem !important;
+  height: fit-content;
+  z-index: 1000 !important;
+}
+
+.toolbar {
+  height: 32px
+  &__title {
+    font-weight: bold !important;
+  }
+
+  &__extraFeature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 16px;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__separateIcon {
+    text-align: center;
+    margin-top: 3px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+}
+.float-right-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  @include tablet {
+    display: none;
+  }
+}
+
+.hamburgerIcon {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+.toolBar--scroll {
+  display: flex;
+  color: var(--color) !important;
+  justify-content: center;
+  flex-wrap: nowrap;
+  font-weight: bold;
+  background-color: var(--backGroundColorStrength);
+  box-shadow: 0px 2px 4px -1px rgb(190, 190, 190),
+    0px 4px 5px 0px rgb(182, 182, 182), 0px 1px 10px 0px rgb(199, 199, 199);
+  transition: background 1s ease 0s;
+  height: 40px !important;
+  min-height: unset !important;
+
+}
+
+.toolBar--unScroll {
+  color: black !important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  transition-duration: 1s;
+  background-color: transparent !important;
+  height: 40px !important;
+  min-height: unset !important;
+}
+
+.header-action-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

@@ -1,0 +1,27 @@
+.sidebar {
+    position: fixed;
+    top: 44px;
+
+    width: 200px;
+    min-height: 100vh;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+
+    background-color: var(--backGroundColorStrength);
+    box-shadow: 0px 1px 2px -1px rgb(190, 190, 190),
+  0px 1px 2px 0px rgb(182, 182, 182), 0px 1px 2px 0px rgb(199, 199, 199);
+
+  &-course__title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,30 @@
+@import "assets/_responsive";
+
+.myWorkSpace {
+  margin-top: 15vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 10vh !important;
+  min-height: calc(90vh - 250px);
+}
+
+.pageTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8vh !important;
+}
+
+.none-mobile {
+  @include mdW {
+    display: none;
+  }
+}
+
+.filterSection {
+  @include mdW {
+    padding-right: 0 !important;
+  }
+}
+

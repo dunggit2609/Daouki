@@ -1,0 +1,46 @@
+.workSpace {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  &:hover {
+    .buttonGroup {
+      transform: translateY(0);
+      transition-duration: .5s;
+    }
+  }
+  &__Link {
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__Name {
+    color: white;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  &__Cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 12px;
+    width: 100%;
+    height: 90px;
+    background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2207x1600/f543a340608d77dc9ad5f1c935d5cca4/photo-1608618140680-6f7190a9b24d.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    filter: brightness(70%);
+  }
+}
+
+.buttonGroup {
+  color: white;
+  font-weight: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transform: translateY(150%);
+  transition-duration: .5s;
+}

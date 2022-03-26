@@ -1,0 +1,15 @@
+.MuiDropzonePreviewList-imageContainer {
+    & > p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+}
+.MuiDropzonePreviewList-root {
+    margin-top: -16px !important;
+}
+
+.MuiDropzoneArea-root {
+    height: 100% !important;
+}

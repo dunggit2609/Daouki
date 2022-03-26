@@ -1,0 +1,33 @@
+.no-course-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.course {
+
+    &__info {
+        margin-bottom: 24px;
+    }
+
+    &__desc {
+        font-size: 28px;
+        font-weight: 700; 
+
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 16px;
+    }
+
+    &__add-new-course {
+        font-size: 24px;
+        font-weight: 500; 
+
+        display: flex;
+        justify-content: center;
+    }
+}

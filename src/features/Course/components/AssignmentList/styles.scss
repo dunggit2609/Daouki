@@ -1,0 +1,14 @@
+.pagination {
+    margin-top: 24px !important;
+
+    &__nav {
+        display: flex;
+        justify-content: end;
+
+        padding-right: 0 !important;
+    }
+}
+
+.no-data {
+    padding: 24px;
+}

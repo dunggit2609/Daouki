@@ -1,0 +1,27 @@
+.course-detail-filter__container {
+    display: flex;
+}
+
+.search {
+    flex-grow: 3;
+    padding: 0 8px 0 0;
+}
+
+.date-range {
+    flex-grow: 1;
+    padding: 0 8px;
+}
+
+.status {
+    flex-grow: 3;
+    padding: 0 8px;
+}
+
+.view-button {
+    flex-grow: 1;
+    padding: 0 8px;
+}
+
+.course-detail-filter__container {
+    margin: 24px 0;
+}

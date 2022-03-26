@@ -1,0 +1,173 @@
+{
+  "header": {
+    "appName": "MYW"
+  },
+  "yupValidate": {
+    "emailRequired": "Hãy nhập địa chỉ Email.",
+    "emailWrongFormat": "Email không hợp lệ.",
+    "phoneRequired": "Hãy nhập số điện thoại.",
+    "phoneWrongFormat": "Số điện thoại không hợp lệ.",
+    "usernameRequired": "Hãy nhập tên người dùng.",
+    "retypePassWordRequired": "Hãy nhập lại mật khẩu.",
+    "retypePassWordNotMatch": "Mật khẩu nhập lại không trùng khớp",
+    "passwordRequired": "Hãy nhập mật khẩu",
+    "passWordWrongFormat": "Mật khẩu gồm ít nhất 8 kí tự, 1 kí tự thường, 1 kí tự in hoa, 1 chứ số.",
+    "required_field": "Trường này không được bỏ trống"
+  },
+  "auth": {
+    "authButton": {
+      "loginButton": "Đăng nhập",
+      "registerButton": "Đăng kí",
+      "loginByFb": "Tiếp tục với Facebook",
+      "noAccount": "Bạn không có tài khoàn?",
+      "haveAccount": "Bạn đã có tài khoản?"
+    },
+    "dialog": {
+      "dialogLoginFb": "Tính năng này đang phát triển. Bạn hãy sử dụng vào lần sau nhé 👌."
+    },
+    "authTitle": {
+      "login": "Đăng nhập",
+      "register": "Đăng kí"
+    },
+    "authField": {
+      "password": "Mật khẩu",
+      "retypepassword": "Nhập lại mật khẩu",
+      "phone": "Số điện thoại",
+      "username": "Tên người dùng",
+      "email": "Email",
+      "username_email": "Email hoặc tên đang nhập"
+    }
+  },
+  "toolTip": {
+    "toogleMode": "Sáng/Tối",
+    "chooseLanguage": "Ngôn ngữ",
+    "userAction": "Thông tin user",
+    "deleteWorkSpace": "Xóa",
+    "editWorkSpace": "Sửa"
+  },
+  "notiStack": {
+    "loginSuccess": "Đăng nhập thành công!!! ✨",
+    "registerSuccess": "Đăng kí thành công!!! 🎉",
+    "logoutSuccess": "Log out successfully!!! 🎈",
+    "hasLogin": "Bạn đã đăng nhập, chuyển hướng đến khu vực làm việc của bạn 🎇",
+    "notLogin": "Bạn chưa đăng nhập, Hãy đăng nhập 🔑"
+  },
+  "footer": {
+    "contact": "Liên lạc",
+    "address": "Phường 14, Quận 8, Thành Phố Hồ Chí Minh",
+    "email": "davidnguyendung71@gmail.com",
+    "phone": "0704635376",
+    "socialMedia": "Mạng xã hội",
+    "coppyRight": "© 2021 Bản quyền thuộc sở hứu của Nguyễn Trí Dũng"
+  },
+  "work-space": {
+    "pageTitle": "💻  Khu vực làm việc của bạn",
+    "filterArea": "Bộ lọc",
+    "noWorkSpace": "Bạn không có work space nào. Hãy thêm mới nhé 👇",
+    "noWorkSpaceJoined": "Bạn không tham gia work space nào !!!",
+    "addNewButton": "Thêm mới",
+    "dialog": {
+      "inputFieldLabel": "Tên của work space",
+      "title": "Hãy nhập thông tin work space của bạn !!!",
+      "workSpaceID": "Id của work space sẽ xóa",
+      "titleConfirmDelete": "Bạn chắc rằng sẽ xóa work space này chứ 😦",
+      "deleteWorkSpaceButton": "Xóa",
+      "addButton": "Thêm",
+      "closeButton": "Hủy"
+    },
+    "failedAddWorkSpace": "Thêm mới work space thất bại, hãy thử lại !!! 💪",
+    "successAddWorkSpace": "Chúc mừng bạn !!!, Thêm mới work space thành công 🎆",
+    "failedDeleteWorkSpace": "Xóa work space thất bại !!! ✋",
+    "successDeleteWorkSpace": "Xóa work space thành công !!! 🧨"
+  },
+  "listFilter": {
+    "all": "Tất cả",
+    "owned": "Khu vực làm việc bạn tạo",
+    "joined": "Khu vực làm việc bạn tham gia"
+  },
+  "search": {
+    "placeholder": "Tìm kiếm"
+  },
+  "create_course": {
+    "course_name": "Tên lớp",
+    "course_code": "Mã lớp",
+    "label": "Tạo lớp",
+    "ok": "Đồng ý",
+    "cancel": "Hủy",
+    "submit": "Chấm bài",
+    "view": "Xem"
+  },
+  "button": {
+    "next_step": "Tiếp theo",
+    "do_later": "Tạo sau",
+    "add_new_course": "Tạo khóa học mới",
+    "assign": "Chấm bài",
+    "visualize": "Trực quan dữ liệu",
+    "delete": "Xóa",
+    "view_assignments": "Xem kết quả chấm bài",
+    "confirm": "Xác nhận"
+  },
+  "create_test": {
+    "label": "Tạo bài kiểm tra",
+    "test_name": "Tên bài kiểm tra",
+    "test_code": "Mã đề",
+    "result_type": "Loại kết quả",
+    "amount_of_question": "Số câu hỏi",
+    "question_type": "Loại câu hỏi",
+    "multiple_choice": "Chọn nhiều đáp án",
+    "single_choice": "Chọn 1 đáp án đúng nhất",
+    "paper_type": "Mẫu giấy",
+    "test_info": "Thông tin bài kiểm tra",
+    "test_config": "Thiết lập bài kiểm tra",
+    "test_more_config": "Thiết lập mở rộng",
+    "change_result": "Thay đổi câu trả lời",
+    "upload_result": "Hãy tải file kết quả",
+    "input_result": "Hãy nhập kết quả",
+    "had_result": "Đã nhập kết quả",
+    "has_no_result": "Chưa nhập kết quả",
+    "enter_result": "Hãy tải tệp hoặc nhập kết quả",
+    "duplicate_test_code": "Mã đề bị trùng",
+    "file_name": "Tên file",
+    "upload_answer": "Tải kết quả"
+
+  },
+  "create_submission": {
+    "label": "Chấm bài",
+    "upload_assignment": "Tải ảnh bài làm"
+  },
+  "resultType": {
+    "image": "Ảnh",
+    "file": "Tệp",
+    "input": "Nhập từ giao diện"
+  },
+  "course_desc": "Khóa học giúp bạn quản lý đề kiểm tra và bài làm của thí sinh",
+  "course_add_new": "Hãy bắt đầu tạo khóa học mới",
+  "from_date": "Từ ngày",
+  "to_date": "Đến ngày",
+  "status": {
+    "label": "Trạng thái",
+    "new": "Mới tạo",
+    "graded": "Đã chấm"
+  },
+  "created_at": "Ngày tạo",
+  "yes": "Có",
+  "no": "Không",
+  "paper_type": {
+    "model_1": "Mẫu 1",
+    "model_2": "Mẫu 2"
+  },
+  "student_id": "Mã số",
+  "grade": "Điểm",
+  "image": "Ảnh",
+  "test_detail": {
+    "label": "Chi tiết bài kiểm tra",
+    "info": "Thông tin chung",
+    "config": "Thiết lập"
+  },
+  "more_feature": "Tính năng",
+  "list_of_course": "Danh sách khóa học",
+  "visualize": {
+    "grade_type": "Thống kê loại điểm",
+    "grade_range": "Thống kê khoảng điểm"
+  }
+}
