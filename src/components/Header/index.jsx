@@ -1,14 +1,10 @@
-import { ButtonBase, Grid, Tooltip } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import LanguageIcon from '@mui/icons-material/Language';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import MenuIcon from "@material-ui/icons/Menu";
-import SelectBox from "components/selectBox";
 import { listLocalStorage, _LIST_LINK } from "constant/config";
-import languageModel from "core/model/languageModel";
-import ToggleMode from "features/darkMode/components/toggleMode";
+
 import { useFeatureOfMenu } from "hooks/useFeatureOfMenu";
 import { useHeaderDisplay } from "hooks/useHeaderDisplay";
 import React, { useState } from "react";
@@ -16,18 +12,13 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import "./styles.scss";
 import { IconButton, MenuItem } from "@mui/material";
-import logo from 'assets/images/logo.png'
+import logo from 'assets/images/DaoukiLogo.svg'
 import LogoutIcon from '@mui/icons-material/Logout';
 import { StyledMenu } from 'components/DropdownMenu/DropdownMenu';
 export default function Header() {
   const { t } = useTranslation();
   const {
     handleChooseUserAction,
-    handleChooseLng,
-
-    handleLanguageBoxClose,
-    handleLanguageBoxClick,
-    isLanguageOpen,
     isDisplayAuth,
     isLogin,
     isDisplayHeader,
@@ -36,7 +27,6 @@ export default function Header() {
   const {
     scrollClass,
     isNotDisplayAppTitle,
-    handleHamburgerClick,
   } = useHeaderDisplay();
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -54,7 +44,6 @@ export default function Header() {
     { icon: <LogoutIcon />, name: "Log out", FabProp: { color: 'primary' }, action: 'Log out' },
   ];
   const curLng = localStorage.getItem(listLocalStorage.language);
-  const itemSelected = curLng;
   return (
     <div>
       {isDisplayHeader && (
@@ -76,42 +65,8 @@ export default function Header() {
                     </>
                   )}
                 </Grid>
-                <div className="hamburgerIcon">
-                  <ButtonBase
-                    className="handleHamburgerClick"
-                    onClick={handleHamburgerClick}
-                  >
-                    <MenuIcon></MenuIcon>
-                  </ButtonBase>
-                </div>
                 <Grid item xs={6} className='header-action-container'>
-                  {/* <div className="toolbar__extraFeature" id="extraFeature">
-                    <Tooltip
-                      title={t("toolTip.chooseLanguage")}
-                      placement="bottom"
-                    >
-                      <ButtonBase
-                        className="btn btn--hoverBottomSpot "
-                        onClick={handleLanguageBoxClick}
-                      >
-                        <LanguageIcon color="primary" />
-                      </ButtonBase>
-                    </Tooltip>
-                    <SelectBox
-                      handleItemSelected={handleChooseLng}
-                      listValue={languageModel}
-                      isOpen={isLanguageOpen}
-                      handleSelectBoxClose={handleLanguageBoxClose}
-                      menuPos={{ vertical: "top", horizontal: "left" }}
-                      displayPos={{
-                        vertical: "bottom",
-                        horizontal: "right",
-                      }}
-                      selected={true}
-                      typeOfSelected={itemSelected}
-                    />
-                    <ToggleMode></ToggleMode>
-                  </div> */}
+
                   {isDisplayAuth && !isLogin && (
                     <>
                       <div className="float-right-block">

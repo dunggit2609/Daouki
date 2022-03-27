@@ -18,8 +18,7 @@ export const useFeatureOfMenu = () => {
     location.pathname !== _LIST_LINK.notFound ? true : false;
   const user = useSelector((state) => state.auth.current);
   const isLogin =
-    !!localStorage.getItem(AUTH.TOKEN_KEY) &&
-    !!(Object.keys(user).length !== 0);
+    !!localStorage.getItem(AUTH.STORAGE_KEY)
 
   const handleLanguageBoxClick = (event) => {
     if (!isLanguageOpen) {

@@ -10,7 +10,7 @@ PrivateRoute.propTypes = {};
 
 //check xem link nào private link ( đã đăng nhập mới được truy cập)
 function PrivateRoute({ component: Component, ...rest }) {
-  const isLogin = !!localStorage.getItem(AUTH.TOKEN_KEY);
+  const isLogin = !!localStorage.getItem(AUTH.STORAGE_KEY);
   const { enqueueSnackbar } = useSnackbar();
   const { t } = useTranslation();
   useEffect(() => {
@@ -28,7 +28,7 @@ function PrivateRoute({ component: Component, ...rest }) {
     <Route
       {...rest}
       render={(props) =>
-        localStorage.getItem(AUTH.TOKEN_KEY) ? (
+        isLogin ? (
           <Component {...props} />
         ) : (
           <Redirect

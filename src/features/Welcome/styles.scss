@@ -1,4 +1,4 @@
-.no-course-container {
+.welcome-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     height: 100%;
 }
 
-.course {
+.welcome {
 
     &__info {
         margin-bottom: 24px;
@@ -23,11 +23,4 @@
         margin-bottom: 16px;
     }
 
-    &__add-new-course {
-        font-size: 24px;
-        font-weight: 500; 
-
-        display: flex;
-        justify-content: center;
-    }
 }

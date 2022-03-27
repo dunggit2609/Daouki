@@ -1,7 +1,6 @@
 import { unwrapResult } from "@reduxjs/toolkit";
 import { _LIST_LINK } from "constant/config";
 import {
-  loginGetTokenSlice,
   loginGetUserInforSlice,
   registerSlice,
 } from "core/redux/authSlice";
@@ -17,14 +16,12 @@ export const useAuthAction = (authType) => {
   const history = useHistory();
   const OnSubmit = async (values) => {
     try {
-      const data = { ...values };
-      const payload = data;
       const action =
         authType === "login"
-          ? loginGetTokenSlice(payload)
+          ? loginGetUserInforSlice()
           : authType === "register"
-          ? registerSlice(payload)
-          : "";
+            ? registerSlice()
+            : "";
       if (authType === "register") {
         const resultAction = await dispatch(action);
         unwrapResult(resultAction);
@@ -33,25 +30,20 @@ export const useAuthAction = (authType) => {
           authType === "login"
             ? t("notiStack.loginSuccess")
             : authType === "register"
-            ? t("notiStack.registerSuccess")
-            : "";
+              ? t("notiStack.registerSuccess")
+              : "";
         enqueueSnackbar(msg, { variant: "success" });
         history.push(_LIST_LINK.index);
       }
-      if (authType === "login") {
+      else if (authType === "login") {
         const resultAction = await dispatch(action);
         unwrapResult(resultAction);
-        // const token = unwrapResult(resultAction);
-        const getUserAction = loginGetUserInforSlice();
-        const getUserInfor = await dispatch(getUserAction);
-        unwrapResult(getUserInfor);
-        // const logginedUSer = unwrapResult(getUserInfor);
         const msg =
           authType === "login"
             ? t("notiStack.loginSuccess")
             : authType === "register"
-            ? t("notiStack.registerSuccess")
-            : "";
+              ? t("notiStack.registerSuccess")
+              : "";
         enqueueSnackbar(msg, { variant: "success" });
         history.push(_LIST_LINK.index);
       }

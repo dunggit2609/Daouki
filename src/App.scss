@@ -1,7 +1,7 @@
 @import "./assets/responsive";
 $iconColor: black;
 $mainBoxColor: white;
-$avatarColor: #1976D2;
+$primaryColor: #181949;
 $buttonAreaColor: transparent;
 $iconSignColor: white;
 .App {
@@ -20,8 +20,9 @@ $iconSignColor: white;
   }
 }
 .MuiTypography-root {
-  font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+  font-family: "Noto Sans" !important;
+  // font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  //   Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
 }
 html,
 body {
@@ -31,10 +32,10 @@ body {
   height: 100%;
   margin: 0;
   background-color: var(--backGroundColor);
-  font-family: "Charlie Text", sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
 }
 .MuiTypography-root {
-  font-family: "Charlie Display", sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
   font-weight: 500 !important;
 }
 .container_lazy {
@@ -128,8 +129,8 @@ body {
   margin-top: 15vh !important;
   margin-bottom: 4vh !important;
   background-color: $mainBoxColor;
-  box-shadow: 5px 5px 5px 5px rgb(226, 225, 225);
-  border-radius: 5px;
+  box-shadow: #0000004f 0 0 10px;
+    border-radius: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -150,14 +151,14 @@ body {
     font-size: 20px;
     margin-top: 25px;
     text-align: center;
-    color: black !important;
+    color: $primaryColor !important;
   }
   form {
     margin: 25px;
   }
   &__avatar {
     margin: auto;
-    background-color: $avatarColor !important;
+    background-color: $primaryColor !important;
     text-align: center;
   }
   &__submitIcon {
@@ -261,7 +262,7 @@ h4 {
   text-align: left;
   
   font-size: 0.75rem;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   line-height: 1.66;
   letter-spacing: 0.03333em;
@@ -273,10 +274,10 @@ h4 {
 
 a.decoration-none {
   text-decoration: none;
-  color: $avatarColor;
+  color: $primaryColor;
 
   &-hover-effect:hover {
-    text-decoration: underline $avatarColor;
+    text-decoration: underline $primaryColor;
   }
 }
 
@@ -292,4 +293,8 @@ a.decoration-none {
       background-color: #d8d8d7;
 
   }
+}
+
+button.MuiButton-containedPrimary {
+  background-color: $primaryColor;
 }

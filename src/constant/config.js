@@ -1,19 +1,10 @@
 export const _LIST_LINK = {
   login: "/login",
   register: "/register",
-  home: "/home",
   notFound: "/NotFound",
   index: "/",
-  course: "/course",
-  noCourse: "/welcome",
-  addNewCourse: "/course/create-course/new",
-  testDetail: "/course/:courseId/test/:testId",
-  testCreate: "/course/:courseId/new-test/create",
-  assginmentCreate: "/course/:courseId/test/:testId/assign",
-  courseDetail: "/course/:courseId",
-  viewAssignment: "/course/:courseId/test/:testId/view-assignment",
-  visualize: "/course/:courseId/test/:testId/visualize",
-  visualizeCourse: "/course/:courseId/visualize"
+  welcome: "/welcome",
+
 
 };
 export const listLinkDisplayScrollClass = [

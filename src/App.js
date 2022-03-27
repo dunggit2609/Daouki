@@ -16,8 +16,7 @@ import "./App.scss";
 import "./features/multiLanguage/i18n.js";
 import "assets/styles/flex.scss"
 import "assets/styles/base.scss"
-import Course from "features/Course";
-import NoCourse from "features/Course/pages/NoCourse/NoCourse";
+import Welcome from "features/Welcome";
 
 function App() {
   const HomePage = React.lazy(() => import("./features/HomePage"));
@@ -26,10 +25,10 @@ function App() {
   const location = useLocation();
   const user = useSelector((state) => state.auth.current);
   const isLogin =
-    !!localStorage.getItem(AUTH.TOKEN_KEY) &&
-    !!(Object.keys(user).length !== 0);
+    !!localStorage.getItem(AUTH.STORAGE_KEY) 
+
   if (isLogin && location.pathname === _LIST_LINK.index) {
-    history.push(_LIST_LINK.course);
+    history.push(_LIST_LINK.welcome);
   } else if (!isLogin && location.pathname === _LIST_LINK.index) {
     history.push(_LIST_LINK.login)
   }
@@ -50,13 +49,10 @@ function App() {
       >
         <Header />
         <Switch>
-          <Redirect from={routerLink.home} to={routerLink.index} exact />
           <Route path="/" component={HomePage} exact></Route>
           <Route path={routerLink.register} component={RegisterPage} exact />
           <Route path={routerLink.login} component={LoginPage} exact />
-          <PrivateRoute path={routerLink.course} component={Course} exact={false}/>
-          {/* <Route path={routerLink.course} component={Course} exact={false}/> */}
-          <PrivateRoute path={routerLink.noCourse} component={NoCourse} exact={false}/>
+          <PrivateRoute path={routerLink.welcome} component={Welcome} exact={false}/>
           <Route component={NotFound} />
         </Switch>
         {isDisplayFooter && <Footer />}
