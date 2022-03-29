@@ -8,7 +8,6 @@ import {
 } from "@material-ui/core";
 import {  Button} from '@mui/material'
 import { VpnKeyRounded } from "@material-ui/icons";
-import DialogSlide from "components/DialogSlide";
 import InputField from "components/FormControl/InputField";
 import PasswordField from "components/FormControl/PasswordField";
 import AUTH from "constant/auth";
@@ -161,20 +160,7 @@ function RegisterForm(props) {
             <span className="have-account">-</span>
             <Link className="decoration-none decoration-none-hover-effect" to={_LIST_LINK.login}>{t("auth.authButton.loginButton")}</Link>
           </div>
-          {/* <Button
-            onClick={handleLoginFBClick}
-            className="mainBox__iconSign"
-            variant="contained"
-          >
-            <Icon className="mainBox__icon fab fa-facebook" color="primary" />
-            <span>{t("auth.authButton.loginByFb")}</span>
-          </Button> */}
         </div>
-        <DialogSlide
-          openStatus={openDialog}
-          handleCloseDialog={handleDialogClose}
-          dialogTitle={t("auth.dialog.dialogLoginFb")}
-        />
       </Container>
     </div>
   );

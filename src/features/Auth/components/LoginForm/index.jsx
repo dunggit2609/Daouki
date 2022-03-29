@@ -3,18 +3,15 @@ import {
   Avatar,
 
   Container,
-  Icon,
   LinearProgress,
   Typography,
 } from "@material-ui/core";
 import { Button } from '@mui/material'
 import { LockOpenRounded } from "@material-ui/icons";
-import DialogSlide from "components/DialogSlide";
 import InputField from "components/FormControl/InputField";
 import PasswordField from "components/FormControl/PasswordField";
 import { _LIST_LINK } from "constant/config";
 import { loadCSS } from "fg-loadcss";
-import { UseSpinnerLoading } from "hooks/useSpinnerLoading";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -120,20 +117,8 @@ function LoginForm(props) {
             <span className="no-account">-</span> 
             <Link className="decoration-none decoration-none-hover-effect" to={_LIST_LINK.register}>{t("auth.authButton.registerButton")}</Link>
           </div>
-          
-          {/* <Button
-            onClick={handleLoginFBClick}
-            className="mainBox__iconSign"
-            variant="contained"
-          >
-            <Icon className="mainBox__icon fab fa-facebook" color="secondary" />
-          </Button> */}
         </div>
-        <DialogSlide
-          openStatus={openDialog}
-          handleCloseDialog={handleDialogClose}
-          dialogTitle={t("auth.dialog.dialogLoginFb")}
-        />
+
       </Container>
     </div>
   );
